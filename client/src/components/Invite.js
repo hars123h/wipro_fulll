@@ -67,7 +67,7 @@ const Invite = () => {
                                     <div className="top-0 left-0 right-0 bottom-0 text-center absolute justify-center items-center flex flex-wrap">
                                         <div>
                                             <h3 className='leading-none text-[30px] text-[#f15542]'>
-                                                35
+                                                30
                                                 <em className='leading-none text-[20px] text-[#f15542] not-italic '>%</em>
                                             </h3>
                                             <p className='opacity-50 text-center text-base text-[#f15542]'>Level 1</p>
@@ -83,7 +83,7 @@ const Invite = () => {
                                     <div className="top-0 left-0 right-0 bottom-0 text-center absolute justify-center items-center flex flex-wrap">
                                         <div>
                                             <h3 className='leading-none text-[30px] text-[#f15542]'>
-                                                4
+                                                3
                                                 <em className='leading-none text-[20px] text-[#f15542] not-italic '>%</em>
                                             </h3>
                                             <p className='opacity-50 text-center text-base text-[#f15542]'>Level 2</p>

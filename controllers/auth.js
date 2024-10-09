@@ -263,14 +263,14 @@ exports.purchase = async (req, res) => {
   // Level 1 recharge commission
   await User.updateOne({ _id: user_data.parent_id }, {
     $inc: {
-      balance: Number((35 / 100) * (Number(investAmount))),
-      directRecharge: Number((35 / 100) * (Number(investAmount)))
+      balance: Number((30 / 100) * (Number(investAmount))),
+      directRecharge: Number((30 / 100) * (Number(investAmount)))
     },
     $addToSet: {
       // directMember: data.user_id,
       comissionData: {
         ...commissionData,
-        comissionAmount: Number(investAmount * 35 / 100),
+        comissionAmount: Number(investAmount * 30 / 100),
         commissionLevel: 'Level 1'
       }
     }
@@ -278,14 +278,14 @@ exports.purchase = async (req, res) => {
   // Level 2 recharge commission
   await User.updateOne({ _id: user_data.grand_parent_id }, {
     $inc: {
-      balance: Number((4 / 100) * (Number(investAmount))),
-      indirectRecharge: Number((4 / 100) * (Number(investAmount)))
+      balance: Number((3 / 100) * (Number(investAmount))),
+      indirectRecharge: Number((3 / 100) * (Number(investAmount)))
     },
     $addToSet: {
       // indirectMember: data.user_id,
       comissionData: {
         ...commissionData,
-        comissionAmount: Number(investAmount * 4 / 100),
+        comissionAmount: Number(investAmount * 3 / 100),
         commissionLevel: 'Level 2'
 
       }

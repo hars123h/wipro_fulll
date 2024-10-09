@@ -267,23 +267,9 @@ const Invest = () => {
 
                                             <ProductCard
                                                 product_type={1}
-                                                plan_cycle={3}
+                                                plan_cycle={2}
                                                 plan_amount={800}
                                                 plan_daily_earning={480}
-                                            />
-
-                                            <ProductCard
-                                                product_type={2}
-                                                plan_cycle={3}
-                                                plan_amount={2000}
-                                                plan_daily_earning={1100}
-                                            />
-
-                                            <ProductCard
-                                                product_type={3}
-                                                plan_cycle={3}
-                                                plan_amount={4500}
-                                                plan_daily_earning={2500}
                                             />
 
                                             {/* <ProductCard
@@ -308,20 +294,6 @@ const Invest = () => {
                                 {activelist === 'activity' &&
                                     <div className="block bg-white -top-[10px] pt-[10px] px-[5px] h-screen pb-12 relative z-[2] rounded-[7px] ">
                                         <div className="flex flex-wrap items-center justify-between h-3/5">
-
-                                            <ProductCard
-                                                product_type={3}
-                                                plan_cycle={1}
-                                                plan_amount={400}
-                                                plan_daily_earning={550}
-                                            />
-
-                                            <ProductCard
-                                                product_type={3}
-                                                plan_cycle={1}
-                                                plan_amount={1000}
-                                                plan_daily_earning={1500}
-                                            />
 
                                             <p className='text-center flex-1'>No plans</p>
 
