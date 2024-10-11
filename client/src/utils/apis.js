@@ -27,6 +27,10 @@ export const getuserearn = async () => {
         plans_purchased = responce.data.plans_purchased;
         plans_purchased = plans_purchased.map((plans, index) => {
 
+            if (plans.product_type === 'short') {
+                return { ...plans }
+            }
+
             if (today < new Date(plans.fullTime)) {
 
                 return {
