@@ -274,23 +274,9 @@ const Invest = () => {
 
                                             <ProductCard
                                                 product_type={1}
-                                                plan_cycle={1}
-                                                plan_amount={630}
-                                                plan_daily_earning={830}
-                                            />
-
-                                            <ProductCard
-                                                product_type={1}
                                                 plan_cycle={2}
                                                 plan_amount={2000}
                                                 plan_daily_earning={1100}
-                                            />
-
-                                            <ProductCard
-                                                product_type={1}
-                                                plan_cycle={5}
-                                                plan_amount={2030}
-                                                plan_daily_earning={1010}
                                             />
 
                                             <ProductCard
@@ -323,7 +309,21 @@ const Invest = () => {
                                     <div className="block bg-white -top-[10px] pt-[10px] px-[5px] h-screen pb-12 relative z-[2] rounded-[7px] ">
                                         <div className="flex flex-wrap items-center justify-between h-3/5">
 
-                                            <p className='text-center flex-1'>No plans</p>
+                                            {/* <p className='text-center flex-1'>No plans</p> */}
+
+                                            <ProductCard
+                                                product_type={1}
+                                                plan_cycle={1}
+                                                plan_amount={630}
+                                                plan_daily_earning={830}
+                                            />
+
+                                            <ProductCard
+                                                product_type={1}
+                                                plan_cycle={5}
+                                                plan_amount={2030}
+                                                plan_daily_earning={1010}
+                                            />
 
                                         </div>
                                     </div>
