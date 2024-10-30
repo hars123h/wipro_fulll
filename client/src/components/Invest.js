@@ -320,9 +320,23 @@ const Invest = () => {
 
                                             <ProductCard
                                                 product_type={1}
+                                                plan_cycle={2}
+                                                plan_amount={840}
+                                                plan_daily_earning={640}
+                                            />
+
+                                            <ProductCard
+                                                product_type={1}
                                                 plan_cycle={5}
                                                 plan_amount={2030}
                                                 plan_daily_earning={1010}
+                                            />
+
+                                            <ProductCard
+                                                product_type={1}
+                                                plan_cycle={7}
+                                                plan_amount={3590}
+                                                plan_daily_earning={2000}
                                             />
 
                                         </div>
